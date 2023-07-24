@@ -1,0 +1,426 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+#main{
+    background-color:  #C38154;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+
+}
+.nav-bar .title{
+    color: white;
+    font-size: 76px;
+    font-weight: 700px;
+}
+.nav-bar p{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 70px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500px;
+}
+span{
+    color: rgb(73, 45, 29);
+}
+.menu li{
+     list-style: none;
+     display: inline-block;
+}
+.menu li a{
+    text-decoration: none;
+    color : rgb(80, 53, 34);
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500px;
+    transition: 0.4s ease-in-out;
+}
+.menu li a:hover{
+    color: aliceblue;
+    /* border-bottom: solid; */
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.home {
+height: 400px;
+padding: 70px;
+margin-top: 100px;
+margin-left: 700px;
+}
+.title-1{
+font-size: 40px;
+}
+.home p{
+font-size: 15px;
+padding-top: 10px;
+}
+.home button{
+    height: 50px;
+    background-color: rgb(80, 53, 34);
+    color: white;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    transition: .4s ease-in;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.home button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid;
+}
+
+.image{
+     float: right;
+    width: 50%; 
+}
+
+
+
+
+
+
+
+
+
+.about{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 25%;
+    padding: 3%;
+   
+}
+.about:hover{
+    border: 2px solid;
+    transition: .4s ease-in;
+    background-color: #F9E0BB;
+    color: black;
+    border: 2px solid;
+}
+.paragraph{
+    width: 45%;
+    font-size: 20px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+    position: relative;
+    min-height: 50vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+
+    
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-size: 19px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+
+
+.container-2{
+    width: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.container-2 .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.container-2 .contact-info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container-2 .contact-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container-2 .contact-info .box .text{
+
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container-2 .contact-info .box .text h3{
+    font-weight: 500;
+    color: #794e12 ;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background-color: #F9E0BB;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+.contactform .inputBox span{
+    position: absolute ;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666 ;
+
+}
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span
+
+{
+    color: #3F2305;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputBox input[type="submit"]{
+
+    width: 100px;
+    background: #463316;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+@media (max-width: 991px) {
+    .contact{
+        padding: 50px;
+    }
+    .container-2{
+        flex-direction: column;
+    }
+    .container-2 .contact-info{
+        margin-bottom: 40px;
+    }
+    .container-2 .contact-info
+    .contactform{
+        width: 100%;
+    }
+    
+}
+.heading{
+    text-align: center;
+    
+}
+.card{
+    display: flexbox;
+}
+.icons{
+    text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
+
+.services{
+  width: 1300px;
+  padding: 30px 60px;
+  margin: auto;
+}
+.services h1{
+   text-align: center;
+   font-size: 36px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   position: relative;
+   font-weight: 600;
+}
+
+.services h1:after{
+content: '';
+position: absolute;
+left: 50%;
+bottom:0 ;
+transform: translateX(-50%);
+width: 150px;
+height: 3px;
+background-color: #fff;
+
+}
+.cards-services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-services{
+    width: calc(34% - 22px);
+    background: #81561a;
+    color: #ffffff;
+    padding: 40px 12px;
+    margin: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+
+}
+
+.sbox i{
+  font-size: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 15px;
+  transition: 0.5s;
+}
+.sbox h3{
+    font-size: 24px;
+}
+.sbox p{
+    margin: 20px 0;
+}
+.sbox a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: #333;
+    padding: 7px 15px;
+    border-radius: 18px;
+    transition: 0.5s;
+    margin: 20px 0;
+
+}
+.sbox a:hover{
+    background: transparent;
+    border: 1px solid #333;
+    transform: scale(1.2);
+    background: #C38154;
+    text-decoration: none;
+    color:#666 ;
+}
+.card-services:hover .sbox i{
+    background: #C38154;
+    color: #fff;
+    border-color: #463316;
+
+}
+.card-services :after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+.card-services :hover :after{
+    transform: rotate(13deg);
+    background-color: #050403;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
